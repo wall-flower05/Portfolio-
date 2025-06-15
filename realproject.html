@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="realcss.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script defer src="realjs.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-bg"></div>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="modeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero reveal">
+    <div class="hero-text">
+      <h1>Hi, I'm Saru</h1>
+      <h2><span id="typed-text"></span></h2>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="reveal">My Projects</h2>
+
+    <div class="project-card reveal">
+      <h3>Internship Project 1</h3>
+      <iframe src="projects/internship-project/password.html" width="100%" height="400" style="border-radius: 12px;"></iframe>
+      <a href="projects/internship-project/password.html" target="_blank">🔗 View Fullscreen</a>
+      <p>A responsive interface built during my internship using HTML, CSS, and JavaScript.</p>
+    </div>
+	
+	<div class="project-card reveal">
+	<h3>Internship Project 2</h2>
+	<iframe src="projects/internship-project/todo.html"width="100%" height="400" style="border-radius: 12px;"></iframe>
+	<a href="projects/internship-project/todo.html" target="_blank"> View Fullscreen</a>
+	<p>A Web page that helps you to create to-do list, you can modify the list by adding and deleting the list</p>
+	</div>
+	
+	<div class="project-card reveal">
+	<h3>Internship Project 3</h2>
+	<iframe src="projects/internship-project/color.html"width="100%" height="400" style="border-radius: 12px;"></iframe>
+	<a href="projects/internship-project/color.html" target="_blank"> View Fullscreen</a>
+	<p>A Web page that helps you to pick colors and copy their hex code to the clipboard</p>
+	</div
+	
+	<div class="project-card reveal">
+	<h3>Internship Project 4</h2>
+	<iframe src="projects/internship-project/quiz.html"width="100%" height="400" style="border-radius: 12px;"></iframe>
+	<a href="projects/internship-project/quiz.html" target="_blank"> View Fullscreen</a>
+	<p> a web page that work as a quiz</p>
+	</div>
+
+    <div class="project-card reveal">
+      <h3>Portfolio Website</h3>
+      <p>A modern animated portfolio website showcasing interactive features and dynamic styling.</p>
+    </div>
+
+    <div class="project-card reveal">
+      <h3>Weather App</h3>
+      <p>A JavaScript-based application to fetch and display live weather using public APIs.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="reveal">
+    <p>&copy; 2025 Saru. All rights reserved.</p>
+  </footer>
+</body>
+</html>
